@@ -48,8 +48,6 @@ app.post("/daalo", function(req, res){
         if(err){
             console.log(err);
         } else {
-            res.render("main");
-
             connection.query("SELECT * from people", function(err, response){
                 if(err){
                     console.log(err);
